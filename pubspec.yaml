@@ -1,0 +1,103 @@
+name: dinoarena
+description: "DinoArena — PLAY. BOOK. COMPETE. Premium multi-sport facility booking app."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  # State management
+  flutter_riverpod: ^3.5.0
+  # Navigation
+  go_router: ^18.1.4
+  # Networking (FastAPI-ready)
+  dio: ^5.11.1
+  # Models
+  freezed_annotation: ^3.1.0
+  json_annotation: ^4.12.0
+  # UI
+  flutter_animate: ^4.5.2
+  qr_flutter: ^4.1.0
+  # Utilities
+  shared_preferences: ^2.5.6
+  intl: ^0.20.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  build_runner: ^2.15.1
+  freezed: ^3.2.5
+  json_serializable: ^6.15.2
+  flutter_launcher_icons: ^0.14.4
+
+# Launcher icons are rendered from the in-app DinoArenaLogo painter by
+# `flutter test tool/generate_brand_assets_test.dart`, then applied with
+# `dart run flutter_launcher_icons`.
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  remove_alpha_ios: true
+  image_path: "assets/brand/dinoarena_icon.png"
+  adaptive_icon_background: "#101B18"
+  adaptive_icon_foreground: "assets/brand/dinoarena_icon_foreground.png"
+  adaptive_icon_monochrome: "assets/brand/dinoarena_icon_monochrome.png"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/brand/
+
+  fonts:
+    - family: PlusJakartaSans
+      fonts:
+        - asset: assets/fonts/PlusJakartaSans-400.ttf
+          weight: 400
+        - asset: assets/fonts/PlusJakartaSans-500.ttf
+          weight: 500
+        - asset: assets/fonts/PlusJakartaSans-600.ttf
+          weight: 600
+        - asset: assets/fonts/PlusJakartaSans-700.ttf
+          weight: 700
+        - asset: assets/fonts/PlusJakartaSans-800.ttf
+          weight: 800
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-400.ttf
+          weight: 400
+        - asset: assets/fonts/Inter-500.ttf
+          weight: 500
+        - asset: assets/fonts/Inter-600.ttf
+          weight: 600
+        - asset: assets/fonts/Inter-700.ttf
+          weight: 700
+    # latin-ext subsets: used as a fallback so glyphs like ₹ stay on-brand.
+    - family: PlusJakartaSansExt
+      fonts:
+        - asset: assets/fonts/PlusJakartaSansExt-400.ttf
+          weight: 400
+        - asset: assets/fonts/PlusJakartaSansExt-500.ttf
+          weight: 500
+        - asset: assets/fonts/PlusJakartaSansExt-600.ttf
+          weight: 600
+        - asset: assets/fonts/PlusJakartaSansExt-700.ttf
+          weight: 700
+        - asset: assets/fonts/PlusJakartaSansExt-800.ttf
+          weight: 800
+    - family: InterExt
+      fonts:
+        - asset: assets/fonts/InterExt-400.ttf
+          weight: 400
+        - asset: assets/fonts/InterExt-500.ttf
+          weight: 500
+        - asset: assets/fonts/InterExt-600.ttf
+          weight: 600
+        - asset: assets/fonts/InterExt-700.ttf
+          weight: 700
